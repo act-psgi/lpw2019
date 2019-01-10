@@ -1,0 +1,78 @@
+[% WRAPPER ui banner = 1%]
+
+<h2>What is it?</h2>
+
+
+<p>
+The London Perl Workshop (LPW) is a free one-day technical conference in Central London, United Kingdom.
+</p>
+<p>
+    <ul>
+    <li>WHEN: Saturday 24th November 2018</li>
+	<li>WHERE: 115 New Cavendish Street London W1W 6UW (<a href="#map">map</a>)</li>
+    </ul>
+</p>
+<p>Please save the date and register, we hope to see you there!</p>
+
+<h2>How can I attend, or present a talk?</h2>
+<p>
+To attend please <a href="[% make_uri('register') %]">create a new user account</a> or <a href="[% make_uri('login') %]">log in</a> and then <a href="[% make_uri('register') %]">register</a>.
+</p>
+
+<p>
+To speak please <a href="[% make_uri('newtalk') %]">submit your proposal</a> as soon as possible - the earlier you submit, the more likely your talk is to be accepted.
+</p>
+
+<p>We welcome the submission of talks, discussions, presentations and workshops about Perl 5, Perl 6, other languages and supporting technologies. It could be something you've been working on, or just something interesting. The Workshop is a chance for us all to learn from each other.</p>
+
+<h2>Sponsors</h2>
+<p>If you would like to sponsor the London Perl Workshop then please do not hesitate to contact <a href="[% make_uri('team.html') %]">the organisers</a> and they will help you with your proposal.</p>
+
+<h2>Submissions</h2>
+<p>Speakers are invited to talk on any subject. We will accept talks from people of any age, background or circumstance, the London Perl Workshop is an inclusive event and we would love to have you attend.</p>
+
+<p>This year we hope to have access to three Workshop rooms and would like to run as many workshops as possible. We would also love to refresh the skills of those wishing to engage with the latest developments in the Perl and other languages. If you wish to submit a workshop please use the same submission form as the talks, please note that workshops will be 60, 120 or 240 minutes in length.</p>
+
+<p>
+	<strong>Proposal Deadline:</strong> Wednesday 31st October 2018<br />
+</p>
+
+<p>Please note that we will be starting to accept talks earlier than the proposal deadline and these will be given a priority on the schedule.</p>
+
+<p>
+Watch this space for updates, or check the <a href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml">feed</a>.
+</p>
+
+[% news = global.news(4);
+   IF news.size > 3;
+     more = news.pop;
+   END;
+ %]
+
+[% IF news.size %]
+<h2>Latest News</h2>
+[% FOREACH item = news %]
+<div class="news-entry">
+ <h3 class="news-header">
+  <span class="news-date">[% date_format(item.datetime, 'date_short') %]</span>
+  <span class="news-title">[% item.title %]</span>
+ </h3>
+ <div class="news-text">
+  [% item.content %]
+ </div>
+</div>
+[% END %]
+[% END %]
+
+[% IF more %]
+<p>
+ <a href="[% make_uri('news') %]" class="news-link">Older announcements</a>
+</p>
+[% END %]
+
+<a name="map"></a>
+<div id=map>
+	<iframe frameborder=0 src="https://www.google.com/maps/d/embed?mid=1Lthw36mAN3NvVU4o7yIS3ddexXp_Zjz1"></iframe>
+</div>
+
+[% END %]
