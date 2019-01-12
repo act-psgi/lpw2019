@@ -1,11 +1,14 @@
 <div class="row">
+<!--
     <div class="col-xs-12">
         <h3>Sponsors</h3>
         <p><small><a href="[% make_uri_info('sponsors.html') %]">Read more about our sponsors</a></small></p>
     </div>
+-->
 
 
 <!-- Gold -->
+<!--
 <div class="col-xs-12" style="margin-bottom: 1em;"><strong>Gold:</strong></div>
 
     <div class="col-xs-12 text-center">
@@ -25,6 +28,7 @@
             <img src="[% make_uri_info('images/logos/scaled/cvl.png') %]" border="0" alt="CV Library" class="img-responsive" style="margin-bottom: 2em;">
         </a>
     </div>
+-->
 
 <!--
     <div class="col-xs-10 col-xs-offset-1 text-center;">
@@ -35,6 +39,7 @@
 -->
 
 <!-- Silver -->
+<!--
 <div class="col-xs-12" style="margin-bottom: 1em;">
     <strong>Silver:</strong>
     <div class="col-xs-10 col-xs-offset-1 text-center;">
@@ -57,7 +62,7 @@
             <img src="[% make_uri_info('images/logos/scaled/opusvl.png') %]" border="0" alt="Opus VL" class="img-responsive" style="margin-bottom: 2em;">
         </a>
     </div>
-
+-->
 
 <!--
     <ul>
@@ -66,9 +71,12 @@
         <li><a href="http://www.booking.com/">Booking.com</a></li>
     </ul>
 -->
+<!--
 </div>
+-->
 
 <!-- Others -->
+<!--
 <div class="col-xs-12" style="margin-bottom: 1em;">
     <strong>Bronze and Community:</strong>
 
@@ -94,8 +102,6 @@
         More information about all of our valued sponsors is available <a href="[% make_uri_info('sponsors.html') %]">on our sponsors page</a>.
     </small></p>
 </div>
+-->
 
 </div>
-
-
-

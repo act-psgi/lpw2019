@@ -55,7 +55,7 @@
   [% END %]
 
   <div class="alert alert-danger">
-    <p>Download a PDF of the schedule <a href="https://leejo.github.io/images/temp/lpw_schedule_2018.pdf">here</a>.
+<!--    <p>Download a PDF of the schedule <a href="https://leejo.github.io/images/temp/lpw_schedule_2018.pdf">here</a>. -->
   </div>
 
   [% IF table.keys.size %]
