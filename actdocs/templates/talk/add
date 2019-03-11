@@ -231,7 +231,7 @@
             <label for="allow_record" class="col-sm-3 control-label">{{Allow recording}}</label>
             <div class="col-sm-9 checkbox">
               <label>
-                <input type="checkbox" name="allow_record" id="allow_record"[% ' checked' IF allow_record %] /> {{Check the box to indicate you agree for this talk to be recorded}}
+                <input type="checkbox" name="allow_record" id="allow_record"[% ' checked' IF allow_record %] /> Check the box to indicate you agree for this talk to be recorded
               </label>
             </div>
           </div>
