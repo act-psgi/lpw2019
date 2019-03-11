@@ -216,22 +216,22 @@
           <div class="form-group">
             <label for="abstract" class="col-sm-3 control-label">{{Abstract}}<br />{{(plain text)}}</label>
             <div class="col-sm-9">
-              <textarea class="form-control" name="abstract" rows="6">[% abstract | form_unescape %]</textarea>
+              <textarea class="form-control" name="abstract" rows="4">[% abstract | form_unescape %]</textarea>
             </div>
           </div>
 
           <div class="form-group">
             <label for="comment" class="col-sm-3 control-label">{{Comments}}</label>
             <div class="col-sm-9">
-              <textarea class="form-control" name="comment" rows="6">[% comment | form_unescape %]</textarea>
+              <textarea class="form-control" name="comment" rows="4">[% comment | form_unescape %]</textarea>
             </div>
           </div>
 
           <div class="form-group">
-            <div class="col-sm-3 control-label">{{Allow recording}}</div>
+            <label for="allow_record" class="col-sm-3 control-label">{{Allow recording}}</label>
             <div class="col-sm-9 checkbox">
               <label>
-                <input type="checkbox" name="allow_record" id="allow_record"[% ' checked' IF allow_record %] /> {{Check the box to indicate you agree for this talk to be recorded and uploaded to YouTube}}
+                <input type="checkbox" name="allow_record" id="allow_record"[% ' checked' IF allow_record %] /> {{Check the box to indicate you agree for this talk to be recorded}}
               </label>
             </div>
           </div>
